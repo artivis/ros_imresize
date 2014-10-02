@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+  <name>ros_imresize</name>
+  <version>0.0.0</version>
+  <description> Rosnode which resize an image topic, update the camera info
+		(K, width, height) and republish then under the same topics
+		augmented with '_crop'. Moreover it can undistord the image
+		prior to resize it. It then set the distortion param D to null
+  </description>
+ 
+  <author email="deray.jeremie@gmail.com">Jeremie Deray</author>
+
+  <maintainer email="deray.jeremie@gmail.com">Jeremie Deray</maintainer>
+
+  <license>BSD</license>
+
+  <url type="git">https://github.com/artivis/ros_imresize</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+    <!-- You can specify that this package is a metapackage here: -->
+    <!-- <metapackage/> -->
+
+    <!-- Other tools can request additional information be placed here -->
+
+  </export>
+  <build_depend>cv_bridge</build_depend>
+  <build_depend>image_transport</build_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <run_depend>cv_bridge</run_depend>
+  <run_depend>image_transport</run_depend>
+  <run_depend>roscpp</run_depend>
+  <run_depend>std_msgs</run_depend>
+
+</package>
